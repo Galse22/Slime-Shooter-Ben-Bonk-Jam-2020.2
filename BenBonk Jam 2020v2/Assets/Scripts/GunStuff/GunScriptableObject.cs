@@ -9,5 +9,4 @@ public class GunScriptableObject : ScriptableObject
     public float cooldownBtwFire;
     public GameObject bullet;
     public float bulletForce;
-    public GameObject soundShoot;
 }

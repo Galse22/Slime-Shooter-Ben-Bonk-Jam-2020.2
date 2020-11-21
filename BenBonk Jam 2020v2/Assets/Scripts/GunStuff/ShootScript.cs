@@ -25,8 +25,6 @@ public class ShootScript : MonoBehaviour
 
     public float varZ;
 
-    GameObject soundArrow;
-
     void Start()
     {
         defineVariables();
@@ -47,7 +45,6 @@ public class ShootScript : MonoBehaviour
     void Shoot()
     {
         localCooldownBtwFire = localBaseCooldownBtwFire;
-        Instantiate(soundArrow, thisGO.transform.position, Quaternion.identity);
         GameObject bulletInstantiated = Instantiate(localBulletPrefab, gunPoint.transform.position, gunHolder.transform.rotation * Quaternion.Euler (0f, 0f, varZ));
         Rigidbody2D rb = bulletInstantiated.GetComponent<Rigidbody2D>();
         rb.AddForce(gunHolderTransform.up * localBulletForce, ForceMode2D.Impulse);
@@ -61,7 +58,6 @@ public class ShootScript : MonoBehaviour
         wgar = gunHolder.GetComponent<WhichGunAndRotation>();
         gunHolderTransform = gunHolder.GetComponent<Transform>();
         localBulletDestructionTime = gunScriptableObject.bulletDestructionTime;
-        soundArrow = gunScriptableObject.soundShoot;
         localBulletForce = gunScriptableObject.bulletForce;
         localBulletPrefab = gunScriptableObject.bullet;
         localBaseCooldownBtwFire = gunScriptableObject.cooldownBtwFire;
