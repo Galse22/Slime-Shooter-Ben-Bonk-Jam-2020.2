@@ -44,6 +44,7 @@ public class ShootScript : MonoBehaviour
 
     void Shoot()
     {
+        CinemachineShake.Instance.ShakeCamera(6f, .0125f);
         localCooldownBtwFire = localBaseCooldownBtwFire;
         GameObject bulletInstantiated = Instantiate(localBulletPrefab, gunPoint.transform.position, gunHolder.transform.rotation * Quaternion.Euler (0f, 0f, varZ));
         Rigidbody2D rb = bulletInstantiated.GetComponent<Rigidbody2D>();

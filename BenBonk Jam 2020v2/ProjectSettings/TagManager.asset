@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - RigidBodyManager
+  - Rocket
+  - Enemy
+  - Manager
   layers:
   - Default
   - TransparentFX

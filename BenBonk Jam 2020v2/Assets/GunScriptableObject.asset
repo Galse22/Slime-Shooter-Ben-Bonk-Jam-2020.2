@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90ab0e2c2df25da448e1d4968746b9fa, type: 3}
   m_Name: GunScriptableObject
   m_EditorClassIdentifier: 
-  bulletDestructionTime: 10
+  bulletDestructionTime: 2
   cooldownBtwFire: 0.15
   bullet: {fileID: 7109954467586054644, guid: fe11d84804382c842b696be5f50cbdf2, type: 3}
   bulletForce: 10
-  soundShoot: {fileID: 3596931310676888781, guid: a6e49b65e8be22d4ba3ce7e630dd5fd5, type: 3}
