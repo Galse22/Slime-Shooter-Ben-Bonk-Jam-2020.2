@@ -49,11 +49,11 @@ public class PlayerMovement : MonoBehaviour
 
         if(movement.y != 0 || movement.x != 0)
         {
-            //anim.SetBool("isWalking", true);
+            anim.SetBool("isWalking", true);
         }
         else
         {
-            //anim.SetBool("isWalking", false);
+            anim.SetBool("isWalking", false);
         }
     }
 
