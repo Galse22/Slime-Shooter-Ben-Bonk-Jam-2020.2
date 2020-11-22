@@ -5,25 +5,56 @@ using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
+    public GameObject sound;
     public void PlayAdventure () 
     {
-        SceneManager.LoadScene(1);
+        Instantiate(sound, this.gameObject.transform.position, Quaternion.identity);
+        Invoke("Scene1", 0.25f);
     }
     public void PlayEndless() 
     {
-        SceneManager.LoadScene(2);
+        Instantiate(sound, this.gameObject.transform.position, Quaternion.identity);
+        Invoke("Scene2", 0.25f);
     }
 
     public void PlayCredits () 
     {
-        SceneManager.LoadScene(3);
+        Instantiate(sound, this.gameObject.transform.position, Quaternion.identity);
+        Invoke("Scene3", 0.25f);
     }
 
     public void PlayHowToPlay () 
     {
-        SceneManager.LoadScene(4);
+        Instantiate(sound, this.gameObject.transform.position, Quaternion.identity);
+        Invoke("Scene4", 0.25f);
     }
     public void PlayMenu () 
+    {
+        Instantiate(sound, this.gameObject.transform.position, Quaternion.identity);
+        Invoke("Scene0", 0.25f);
+    }
+
+    public void Scene1()
+    {
+        SceneManager.LoadScene(1);
+    }
+
+    public void Scene2()
+    {
+        SceneManager.LoadScene(2);
+    }
+
+    public void Scene3()
+    {
+        SceneManager.LoadScene(3);
+    }
+    
+    public void Scene4()
+    {
+        SceneManager.LoadScene(4);
+    }
+
+    public void Scene0()
     {
         SceneManager.LoadScene(0);
     }

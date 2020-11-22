@@ -159,6 +159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1a12e95d5ab2fe4a843f7ca81637d16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hitSFX: {fileID: 2101742425856050864, guid: 182e4ad1ae5804246b70e12d871a7655, type: 3}
   health: 3
   baseMaterial: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   whiteMat: {fileID: 2100000, guid: 108178fb945602944820edb7fa8a2931, type: 2}

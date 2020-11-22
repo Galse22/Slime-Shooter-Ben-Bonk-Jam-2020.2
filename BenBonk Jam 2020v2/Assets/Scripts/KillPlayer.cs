@@ -6,6 +6,7 @@ public class KillPlayer : MonoBehaviour
 {
     public GameObject deathGO;
     public GameObject hitSound;
+    public PlayerMovement playerMov;
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Enemy")
@@ -15,6 +16,7 @@ public class KillPlayer : MonoBehaviour
             deathGO.SetActive(true);
             Animator anim = GetComponent<Animator>();
             anim.SetBool("isDead", true);
+            playerMov.canMove = false;
             Invoke("SetTimeScale", 0.5f);
         }
     }

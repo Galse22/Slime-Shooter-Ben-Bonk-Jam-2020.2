@@ -1,8 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ScoreManager : MonoBehaviour
 {
@@ -30,7 +30,7 @@ public class ScoreManager : MonoBehaviour
         {
             if(playingEndless == false)
             {
-                //SceneManager.LoadScene(2);
+                SceneManager.LoadScene(5);
             }
         }
         if(playingEndless == true)

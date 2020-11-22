@@ -6,6 +6,7 @@ public class HealthManager : MonoBehaviour
 {
     GameObject scoreManagerGO;
     ScoreManager scoreManager;
+    public GameObject hitSFX;
     public int health;
     public Material baseMaterial;
     public Material whiteMat;
@@ -20,6 +21,7 @@ public class HealthManager : MonoBehaviour
     public void TakeDamage()
     {
         CinemachineShake.Instance.ShakeCamera(2f, .04f);
+        Instantiate(hitSFX, this.gameObject.transform.position, Quaternion.identity);
         health -= 1;
         if(health == 0 || 0 > health)
         {

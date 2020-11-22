@@ -1836,6 +1836,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathGO: {fileID: 418935112}
   hitSound: {fileID: 6594413917072319160, guid: cae7b3ce0eb68714da6efde0c14f31f3, type: 3}
+  playerMov: {fileID: 708944523}
 --- !u!1 &712003496
 GameObject:
   m_ObjectHideFlags: 0
@@ -4345,19 +4346,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7900447527871636205, guid: fdb644b065b483140a0b50cf7d5f6a46, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7900447527871636205, guid: fdb644b065b483140a0b50cf7d5f6a46, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7900447527871636205, guid: fdb644b065b483140a0b50cf7d5f6a46, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7900447527871636205, guid: fdb644b065b483140a0b50cf7d5f6a46, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7900447527871636205, guid: fdb644b065b483140a0b50cf7d5f6a46, type: 3}
       propertyPath: m_SizeDelta.x
@@ -4397,11 +4398,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7900447527871636205, guid: fdb644b065b483140a0b50cf7d5f6a46, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 232.89
+      value: -164.18262
       objectReference: {fileID: 0}
     - target: {fileID: 7900447527871636205, guid: fdb644b065b483140a0b50cf7d5f6a46, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 130.41
+      value: -32.875618
       objectReference: {fileID: 0}
     - target: {fileID: 7900447527871636205, guid: fdb644b065b483140a0b50cf7d5f6a46, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
